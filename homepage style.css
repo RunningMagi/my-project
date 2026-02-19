@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Cream-color: #fafaf8;
+    --PureWhite-color: #ffffff;
+    --Primarytext-color: #0f0f0f;
+    --Secondary-color: #a5a5a5;
+    --Labeltext-color: #8a8a8a;
+    --Primarybutton: #000000;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Cream-color);
+}
+
+h1 {
+    color: var(--Primarytext-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.85rem;
+    font-weight: bold;
+}
+
+h2 {
+    color: var(--Primarytext-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--Secondary-color);
+}
+
+p {
+    font-size: 1.05rem;
+    color: var(--Primartext-color);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Primartext-color);
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* Common Button */
+
+.button-box {
+    padding: 16px 45px;
+    border-radius: 12px;
+    background-color: var(--Primarybutton);
+    color: var(--Labeltext-color);
+}
+
+/* Navation Bar */
+.nav-bar {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--PureWhite-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar .nav-item {
+    width: 30%;
+    height: 30px;
+    color: var(--Primartext-color);
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.nav-bar ul {
+    width: 50%;
+    height: 35px;
+    list-style-type: none;
+    /* background-color: red;    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-bar ul a {
+    padding: 5px 20px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-bar ul a:hover {
+    color: var(--Cream-color);
+    background-color: var(--Primarybutton);
+
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    height: 400px;
+    background-image: url(imageFolder/Main_fruits.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .head-container {
+    width: 300px;
+    height: 350px;
+    padding-top: 1.2rem;
+    margin-left: 2.3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* background-color: red; */
+}
+
+header .head-container table tr td {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+/* Content Section Page */
+
+.content-container {
+    width: 100%;
+    height: 200px;
+    background-color: var(--PureWhite-color);
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-container .content-script {
+    width: 550px;
+    height: 120px;
+    /* background-color: rosybrown; */
+}
+
+.content-container .content-script h2 {
+    border-left: 3.5px solid var(--Primarybutton);
+    margin-bottom: 12px;
+}
+
+/* Content Card Section */
+
+.card-container {
+    width: 100%;
+    height: 450px;
+    background-color: var(--PureWhite-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-container .card {
+    width: 270px;
+    height: 320px;
+    border-radius: 20px;
+    color: var(--Labeltext-color);
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--Primarybutton);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+.card-container .card .image-container {
+    width: auto;
+    height: 80px;
+    position: relative;
+
+}
+
+.card-container .card .image-container img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -55px;
+    left: -120px;
+    z-index: 2;
+}
+
+.card-container .card .card-component {
+    margin-left: 1.25rem;
+}
+
+.card-container .card .card-component h3 {
+    margin-bottom: 1.05rem;
+}
+
+
+.card-container .card .card-component p {
+    color: var(--Labeltext-color);
+    font-size: small;
+}
+
+.card-container .card .card-button a {
+    padding: 12px 75px;
+    border-radius: 12px;
+    color: var(--Primarytext-color);
+    background-color: var(--Secondary-color);
+}
+
+/* Bottom Content Section */
+
+.bottom-container {
+    width: 100%;
+    height: 650px;
+    /* background-color: red; */
+    background-image: url(imageFolder/lemonade\ fruit\ drink.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    position: relative;
+}
+
+.bottom-content-box {
+    width: 290px;
+    height: 140px;
+    /* background-color: red; */
+    position: absolute;
+    right: 250px;
+    top: 110px;
+}
+
+.bottom-container .button-box {
+    position: absolute;
+    right: 350px;
+    bottom: 250px;
+    padding: 20px 55px;
+    background-color: var(--Primarybutton);
+    border-radius: 12px;
+}
+
+/* Final Content Section */
+
+.final-content-container {
+    width: 100%;
+    height: 350px;
+    background-color: var(--PureWhite-color);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.final-box {
+    width: 550px;
+    height: 120px;
+    /* background-color: royalblue; */
+}
+
+.final-content-container .final-box h2 {
+    margin-bottom: 12px;
+    border-left: 5px solid var(--Primarybutton);
+}
+
+.final-content-container .final-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.final-content-container .final-button .blink-button {
+    padding: 12px 75px;
+    border-radius: 12px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border: 2px solid var(--Primarybutton);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.final-content-container .final-button .blink-button::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: var(--Primarybutton);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+
+.final-content-container .final-button .blink-button:hover::before {
+    width: 100%;
+}
+
+.final-content-container .final-button .blink-button:hover {
+    color: var(--Cream-color);
+}
+
+/* Footer Section */
+
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: #2d2d2d;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .footer {
+    width: 180px;
+    height: 220px;
+    /* background-color: rebeccapurple; */
+}
+
+footer .content {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+span {
+    font-size: 1.05rem;
+    font-family: 'Roboto', sans-serif;
+    color: var(--Secondary-color);
+}
+
+footer .quick-link {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+footer .quick-link a {  
+    text-transform: capitalize;
+    font-weight: medium;
+    font-size: 1.01rem;
+    color: var(--Secondary-color);
+}
+
+footer .social-media {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+footer .send-message {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .send-message textarea {
+    width: 90%;
+    height: 150px;
+    margin-top: 12px;
+    border: 2px solid #555353;
+    background-color: #2d2d2d;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+footer .send-message a {
+    font-size: 1.02rem;
+    font-weight: medium;
+    background-color: #555353;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+.base-container {
+    width: 100%;
+    height: 75px;
+    color: var(--Labeltext-color);
+    text-align: center;
+    line-height: 70px;
+    background-color: var(--Primarybutton);
+}
+
+/* For Responsive */
+@media screen and (max-width: 480px) {
+    /* Nav Bar Setting */
+    .nav-bar{
+        height: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-bar .nav-item{
+        display:none;
+    }
+    .nav-bar ul{
+        width: 100%;
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: auto;
+        gap: 3px;
+    }
+    .nav-bar ul li .fa-solid{
+        display: none;
+    }
+    .nav-for-home{
+        font-size: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+
+    /* Header Section Setting */
+    
+}

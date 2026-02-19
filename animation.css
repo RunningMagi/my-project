@@ -1,0 +1,18 @@
+/* Animate to Cards */
+
+.card{
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 3px 3px 3px #525252;
+}   
+
+.button-box {
+    transition: all 0.2s ease-in-out;
+}
+
+.button-box:hover {
+    color: #ffffff;
+}
