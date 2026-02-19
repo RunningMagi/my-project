@@ -110,7 +110,7 @@ a {
 header {
     width: 100%;
     height: 400px;
-    background-image: url(imageFolder/Main_fruits.jpg);
+    background-image: url(imageFolder/main_fruits.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
